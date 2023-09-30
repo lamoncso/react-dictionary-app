@@ -13,7 +13,7 @@ export default function App() {
         <Dictionary />
       </main>
       <footer><small>
-        Coded by MEMEMEME.
+        Coded by Monika Lauko.
       </small></footer>
     </div>
     </div>
