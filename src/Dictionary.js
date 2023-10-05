@@ -18,9 +18,13 @@ export default function Dictionary(props){
       axios.get(apiUrl).then(handleResponse);
     }
 
+    function handleSubmit(event){
+      event.preventDefault();
+      search();
+    }
+
     function handleKeywordChange(event){
         setKeyword(event.target.value);
-        search();
     }
 
     function load(){
@@ -33,7 +37,7 @@ export default function Dictionary(props){
       <div className="Dictionary">
         <section>
         <h1>What are you looking for?</h1>
-        <form onSubmit={search} autoFocus={true}>
+        <form onSubmit={handleSubmit} autoFocus={true}>
           <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>
         </form>
         
@@ -44,5 +48,6 @@ export default function Dictionary(props){
     );
     }else{
       load();
+      return "Loading";
     }
 }
