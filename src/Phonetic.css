@@ -1,0 +1,29 @@
+.Phonetic a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.7;
+}
+
+.Phonetic .audio-icon{
+    color: #217a6e;
+    font-size:larger;
+    padding: 10px auto;
+    padding-bottom: 15px;
+    transition: all 150ms ease-in-out;
+}
+
+.Phonetic .audio-icon:hover{
+    color:#71ddce;
+}
+
+.Phonetic button {
+    padding: 3px 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    margin-bottom: 12px
+}
+
+.Phonetic .text{
+    font-size: 25px;
+    margin-left:12px;
+}
