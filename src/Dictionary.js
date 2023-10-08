@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import Photos from "./Photos";
 import "./Dictionary.css";
 
 export default function Dictionary(props){
@@ -24,9 +25,8 @@ export default function Dictionary(props){
 
       let pexelsApiKey =
         "LsPYNrgU5nt06bs2MCgohXjPBE00uDNC88WReHIjDOFXsHjNHDrOS0lN";
-      let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
-      let header = { Authorization: `Bearer ${pexelsApiKey}` };
-      console.log(header);
+      let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+      let header = { Authorization: `${pexelsApiKey}` };
       axios
         .get(pexelsApiUrl, { headers: header })
         .then(handlePexelsResponse);
@@ -58,6 +58,7 @@ export default function Dictionary(props){
         <div className="hint">Suggested words: sunset, wine, yoga, nature...</div>
         </section>
         <Results results={results}/>
+        <Photos photos={photos} />
       </div>
     );
     }else{

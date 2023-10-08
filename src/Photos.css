@@ -1,0 +1,13 @@
+.Photos img{
+    margin-bottom:5px;
+    border-radius: 6px;
+    transition: all 150ms ease-in-out;
+}
+
+.Photos img:hover{
+scale:1.1;
+}
+
+.Photos section {
+    padding:none!important;
+}
