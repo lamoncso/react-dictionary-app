@@ -8,7 +8,6 @@
     color: #217a6e;
     font-size:larger;
     padding: 10px auto;
-    padding-bottom: 15px;
     transition: all 150ms ease-in-out;
 }
 
@@ -24,6 +23,6 @@
 }
 
 .Phonetic .text{
-    font-size: 25px;
+    font-size: 20px;
     margin-left:12px;
 }
