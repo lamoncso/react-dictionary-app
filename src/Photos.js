@@ -10,7 +10,8 @@ export default function Photos(props){
                 {props.photos.map(function(photo, index){
                     return(
                         <div key={index} className="col-4 img-fluid">
-                            <a href={photo.src.original} target="_blank" rel="noreferrer">
+                            <a href={photo.src.original} target="_blank" rel="noreferrer"
+                            alt="photos from pexels">
                         <img src={photo.src.tiny}/>
                         </a>
                         </div>
