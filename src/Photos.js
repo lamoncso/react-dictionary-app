@@ -11,7 +11,7 @@ export default function Photos(props){
                     return(
                         <div key={index} className="col-4 img-fluid">
                             <a href={photo.src.original} target="_blank" rel="noreferrer"
-                            alt="photos from pexels">
+                            alt="">
                         <img src={photo.src.tiny}/>
                         </a>
                         </div>
