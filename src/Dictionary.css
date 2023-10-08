@@ -23,3 +23,9 @@
 .Dictionary .hint{
     font-size: 14px;
 }
+
+@media(max-width:500px){
+    .Dictionary h1{
+        font-size: 25px;
+    }
+}
